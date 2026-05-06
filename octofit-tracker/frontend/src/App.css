@@ -1,0 +1,262 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%) !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #5a67d8;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin: 0 10px;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-link:hover {
+  color: white !important;
+  border-bottom-color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Container & Main Content */
+.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+/* Cards */
+.card {
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.2);
+}
+
+.card-title {
+  color: #667eea;
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+/* Tables */
+.table {
+  background: white;
+  border-radius: 0.5rem;
+  margin-bottom: 0;
+}
+
+.table thead {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+.table thead th {
+  color: white;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  padding: 1rem;
+}
+
+.table tbody tr {
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9ff;
+  border-left: 4px solid #667eea;
+}
+
+.table tbody td {
+  padding: 1rem;
+  color: #555;
+  vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f8f9ff;
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  padding: 0.65rem 1.5rem;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #5a67d8 0%, #6b3d99 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  color: white;
+}
+
+.btn-outline-primary {
+  color: #667eea;
+  border: 2px solid #667eea;
+  background: transparent;
+}
+
+.btn-outline-primary:hover {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-lg {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #667eea;
+  font-weight: 700;
+}
+
+.display-5 {
+  font-size: 2.5rem;
+}
+
+/* Welcome Page */
+.welcome-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.welcome-card {
+  max-width: 32rem;
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border-top: 5px solid #667eea;
+}
+
+.welcome-card .card-body {
+  background: white;
+}
+
+.welcome-card .card-title {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  color: #667eea;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+}
+
+.modal-title {
+  font-weight: 700;
+}
+
+.close {
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+  
+  .display-5 {
+    font-size: 1.8rem;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .table thead th {
+    font-size: 0.75rem;
+    padding: 0.75rem;
+  }
+}
