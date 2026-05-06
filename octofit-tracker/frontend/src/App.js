@@ -13,7 +13,7 @@ function App() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
         <div className="container-fluid">
           <Link className="navbar-brand fw-bold" to="/">
-            <img src="/octofitapp-small.svg" alt="OctoFit Logo" />
+            <img src={`${process.env.PUBLIC_URL}/octofitapp-small.png`} alt="OctoFit Logo" />
             OctoFit Tracker
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
